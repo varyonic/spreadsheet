@@ -3,7 +3,7 @@ require 'spreadsheet/writer'
 require 'spreadsheet/excel/writer/biff8'
 require 'spreadsheet/excel/writer/format'
 require 'spreadsheet/excel/writer/worksheet'
-require 'ole/file_system'
+require 'ole/storage'
 
 module Spreadsheet
   module Excel
@@ -96,6 +96,7 @@ class Workbook < Spreadsheet::Writer
     @number_formats[workbook][format] || 0
   end
   def sanitize_worksheets sheets
+    return sheets if sheets.empty?
     found_selected = false
     sheets.each do |sheet|
       found_selected ||= sheet.selected

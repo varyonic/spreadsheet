@@ -1,3 +1,73 @@
+=== 0.6.5.9 / 7.9.2011
+
+* Fixed a frozen string bug thanks to dblock (Daniel Doubrovkine),
+* dblock@dblock.org
+
+  * https://github.com/dblock/spreadsheet/commit/164dcfbb24097728f1a7453702c270107e725b7c
+
+=== 0.6.5.8 / 30.8.2011
+
+* This patch is about adding a sheet_count method to workbook so that it returns
+* the total no of worksheets for easy access. Please check. By
+* tamizhgeek@gmail.com
+
+        * https://gist.github.com/1180625
+
+=== 0.6.5.7 / 20.7.2011
+
+* Fixed the bug introduced by Roel van der Hoorn and updated the test cases.
+
+  * https://github.com/vanderhoorn/spreadsheet/commit/c79ab14dcf40dee1d6d5ad2b174f3fe31414ca28
+
+=== 0.6.5.6 / 20.7.2011
+
+* Added a fix from Roel van der Hoorn to sanitize_worksheets if 'sheets' is empty.
+
+  * https://github.com/vanderhoorn/spreadsheet/commit/c109f2ac5486f9a38a6d93267daf560ab4b9473e
+
+=== 0.6.5.5 / 24.6.2011
+
+* updated the color code for orange to 0x0034 => :orange, thanks to the hint of Jonty
+
+  * https://gist.github.com/1044700
+
+=== 0.6.5.4 / 18.4.2011
+
+* Updated worksheet.rb according to the Patch of Björn Andersson.
+
+  * https://gist.github.com/925007#file_test.patch
+  * http://url.ba/09p9
+
+=== 0.6.5.3 / 23.3.2011
+
+* Updated Txt lib/spreadsheet/excel/writer/biff8.rb with a Patch from Alexandre Bini
+
+  * See this for full detail: http://url.ba/6r1z
+
+=== 0.6.5.2 / 14.2.2011
+
+* Updated test/integration.rb to work with Ruby ruby 1.9.2p136 (2010-12-25 revision 30365) [i686-linux]
+  
+  * Thanks for the hint tomiacannondale@gmail.com
+
+=== 0.6.5.1 / 17.1.2011
+
+* One enhancement thanks to Qiong Peng, Moo Yu, and Thierry Thelliez
+
+  * http://dev.ywesee.com/wiki.php/Gem/Spreadsheet
+
+=== 0.6.5 / 07.12.2010
+
+* 2 Enhancements courtesy to ISS AG.
+
+  * Outlining (Grouping) of lines and columns is now possible. The outlining 
+    maximum is 8. This means you can do 8 subgroups in a group.
+
+  * Hiding and Unhiding of lines and columns is now possible. 
+
+  * Both of above two points is now possible by creating a new Excel File from 
+    scratch or editing an existing XLS and adding groups or hiding lines to it.
+
 === 0.6.4.1 / 2009-09-17
 
 * 3 Bugfixes
